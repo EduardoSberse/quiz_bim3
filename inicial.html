@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="pergunta">
+        <h1>QUIZ <br>ELON MUSK</h1>
+        
+        <div class="perguntinha">
+            <h2>Neste quiz vamos testar seus conhecimentos sobre Elon Musk. Serão 20 perguntas com respostas entre A, B, C e D, sendo 10 faceis e 10 difíceis. <br> Boa sorte! :)</h2>
+        </div>
+
+        <div class="questao">
+            <form id="formQuiz">
+                <fieldset>
+                    <div class="resposta">
+                        <button class="facil" type="button" onclick="iniciarQuiz('facil')">FÁCIL</button>
+                    </div>
+                    <div class="resposta">
+                        <button class="dificil" type="button" onclick="iniciarQuiz('dificil')">DIFÍCIL</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
