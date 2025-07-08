@@ -62,30 +62,13 @@ body{
 
 }
 
-.resposta{
-    background-color:  rgba(30, 30, 30, 0.95);
-    border: 3px solid rgba(0, 255, 255, 0.2);
-    box-shadow: 0 0 7px rgba(0, 255, 255, 0.2);
-    display: flex;
-    align-items: baseline;
-    flex-direction: row;
-    margin: 16px 0px;
-    border-radius: 10px;
-    width: 88%;
-    margin-top: 30px;
-    
 
-
-}
 
 .resposta label {
     width: 100%;
     cursor: pointer;
 }
 
-input[type=radio]{
-    display: none;
-}
 
 /* .questao button {
     /* background-color: #121212; 
@@ -104,5 +87,12 @@ input[type=radio]{
 } */   
 
 
+#dif{
 
+color: white; 
+background-color: rgba(30, 30, 30, 0.95) ;
+border: 3px solid rgba(0, 255, 255, 0.2);
+box-shadow: 0 0 7px rgba(0, 255, 255, 0.2);
+}
+    
 
