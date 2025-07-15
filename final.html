@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="pergunta">
+        <h1>PONTUAÇÃO FINAL</h1>
+        
+        <div class="perguntinha">
+            <h2 id="pontuacaoFinal">0/100</h2>
+        </div>
+
+        <div class="questao">
+            <form>
+                <fieldset>
+                    <div class="resposta">
+                        <input type="radio" id="resposta3" name="resposta" value="verdadeiro" onclick="window.location.href='index.html'">
+                        <label for="resposta3">Recomeçar</label>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+    <script>
+        window.onload = () => {
+            const url = new URL(window.location.href);
+            const pontos = url.searchParams.get("pontuacao") || 0;
+            document.getElementById("pontuacaoFinal").innerText = `${pontos}/100`;
+        };
+    </script>
+</body>
+</html>
