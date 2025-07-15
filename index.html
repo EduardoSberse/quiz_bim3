@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="pergunta">
+        <h1>QUIZ <br>ELON MUSK</h1>
+        
+        <div class="perguntinha">
+            <h2>Neste quiz vamos testar seus conhecimentos sobre Elon Musk. Serão 20 perguntas com respostas entre A, B, C e D, sendo 10 fáceis e 10 difíceis. <br> Boa sorte! :)</h2>
+        </div>
+
+        <div class="questao">
+            <form id="formQuiz">
+                <fieldset>
+                    <div class="resposta">
+                        <input type="radio" id="facil" name="dificuldade" value="facil">
+                        <label for="facil">Fácil</label>
+                    </div>
+                    <div class="resposta">
+                        <input type="radio" id="dificil" name="dificuldade" value="dificil">
+                        <label for="dificil">Difícil</label>
+                    </div>
+                    <button id="botaoIniciar">Iniciar</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("botaoIniciar").addEventListener("click", function (event) {
+            event.preventDefault();
+            const dificuldade = document.querySelector('input[name="dificuldade"]:checked');
+            if (dificuldade) {
+                window.location.href = `p1.html?dificuldade=${dificuldade.value}`;
+            } else {
+                alert("Escolha uma dificuldade para começar!");
+            }
+        });
+    </script>
+</body>
+</html>
